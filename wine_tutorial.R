@@ -3,7 +3,7 @@ library(tidyverse)
 # Importe o arquivo
 wine_dataset<- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data", header = FALSE, sep=",")
 
-# Verifique as dimensões do dataset
+# Verifique as dimensÃµes do dataset
 nrow(wine_dataset)
 ncol(wine_dataset)
 
@@ -34,7 +34,7 @@ names(wine_dataset_sem_NA)[14] <- "Proline"
 
 
 # Para cada uma das colunas:
-  # calcule os valores médios dos exemplares (rowmeans(df))
+  # calcule os valores mÃ©dios dos exemplares (rowmeans(df))
 
 for (i in 2:14) {
   
@@ -65,5 +65,5 @@ for(i in 2:14){
 
 boxplot
 
-# - plote gráficos das colunas, duas a duas.
+# - plote grÃ¡ficos das colunas, duas a duas.
 plot(wine_dataset_sem_NA)
